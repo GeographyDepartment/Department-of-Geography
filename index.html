@@ -190,7 +190,7 @@
             return {
                 pane: 'pane_Railway_3',
                 opacity: 1,
-                color: 'rgba(0,0,0,1.0)',
+                color: 'rgba(0,0,0,0)',
                 dashArray: '',
                 lineCap: 'round',
                 lineJoin: 'round',
@@ -265,7 +265,7 @@
                         <td>' + (feature.properties['name1'] !== null ? autolinker.link(feature.properties['name1'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Photo'] !== null ? '<img src="images/' + String(feature.properties['Photo']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Photo'] !== null ? '<img src="images/' + String(feature.properties['Photo']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
